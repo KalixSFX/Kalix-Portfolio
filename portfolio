@@ -1,0 +1,140 @@
+html_code = '''
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalix | Cinematic Sound Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #111;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.25rem;
+      color: #aaa;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #e50914;
+      color: #fff;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      font-size: 2rem;
+      border-bottom: 2px solid #333;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .project {
+      background-color: #1a1a1a;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    .project h3 {
+      margin-top: 0;
+    }
+    .contact p, .about p {
+      color: #ccc;
+    }
+    a {
+      color: #e50914;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kalix</h1>
+    <p>Cinematic Sound Designer & Trailer Score Specialist</p>
+    <a href="#reel" class="button">🎧 Watch My Demo Reel</a>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I’m Oussama Tarboui, aka <strong>Kalix</strong> — a cinematic sound designer and trailer score specialist from Morocco.
+      I create immersive sound for sci-fi and horror trailers, concept visuals, and short-form storytelling. From high-impact scoring to dark, futuristic SFX — I bring visuals to life with sound.</p>
+  </section>
+
+  <section id="services">
+    <h2>What I Do</h2>
+    <ul>
+      <li>🎼 Trailer Scoring</li>
+      <li>🎛️ Custom Sound Design</li>
+      <li>🔊 Sci-Fi & Horror FX</li>
+      <li>🎬 Concept Trailer Audio</li>
+    </ul>
+  </section>
+
+  <section id="reel">
+    <h2>Featured Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Blade Runner 2049 (Rescore)</h3>
+        <p>Ambient, dark cinematic trailer rescore</p>
+        <a href="#">🎧 Listen</a>
+      </div>
+      <div class="project">
+        <h3>The Batman (SFX Rework)</h3>
+        <p>Custom horror/thriller tension and atmosphere</p>
+        <a href="#">🎧 Listen</a>
+      </div>
+      <div class="project">
+        <h3>Interstellar Cut (Trailer Rescore)</h3>
+        <p>Emotional orchestral build with cinematic pacing</p>
+        <a href="#">🎧 Listen</a>
+      </div>
+      <div class="project">
+        <h3>Original Piece: Drift</h3>
+        <p>A haunting hybrid horror cue by Kalix</p>
+        <a href="#">🎧 Listen</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Let’s Work Together</h2>
+    <p>Open to freelance, collabs, and custom audio work.</p>
+    <p>📩 Email: <a href="mailto:your@email.com">your@email.com</a><br />
+      📱 Instagram: <a href="https://instagram.com/yourhandle">@yourhandle</a><br />
+      🎧 SoundCloud/YouTube: <a href="#">Your Links</a></p>
+  </section>
+</body>
+</html>''' 
+
+# Now you can use Python to print or save this HTML content to a file:
+
+with open('kalix_portfolio.html', 'w') as f:
+    f.write(html_code)
+
+print('HTML file saved as kalix_portfolio.html')
